@@ -3,27 +3,24 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Marketing Control Room" },
+      { name: "description", content: "Under konstruktion" },
+      { property: "og:title", content: "Marketing Control Room" },
+      { property: "og:description", content: "Under konstruktion" },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="flex min-h-screen items-center justify-center bg-background px-6">
+      <div className="text-center">
+        <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
+          Marketing Control Room
+        </h1>
+        <p className="mt-4 text-lg text-muted-foreground">Under konstruktion</p>
+      </div>
+    </main>
   );
 }
